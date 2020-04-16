@@ -69,25 +69,7 @@ rules[N_PRIME].update({ EXP : [] })
 rules[N_PRIME].update({ COMMA : [] })
 rules[N_PRIME].update({ EOF : [] })
 
-# print error
-def printError(stack, input_string, ip):
-    message = ""
-    message += "Error:\n"
-    message += "\tStack:\t" + str(stack) + "\n"
-    message += "\tInput:\t" + input_string + "\n"
-    message += "\tChar:\t" + "'" + input_string[ip] + "'"
-    return message
-    # print("Error:")
-    # print("\tBlock:\t" + location)
-    # print("\tStack:\t" + str(stack))
-    # print("\tInput:\t" + input_string)
-    # print("\tChar:\t" + "'" + input_string[ip] + "'")
-
-
-
-
-
-
+# implement non-recursive predictive parsing algorithm
 def parse(input_string):
     # create stack
     stack = []
