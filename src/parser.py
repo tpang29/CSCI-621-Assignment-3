@@ -90,8 +90,6 @@ def parse(input_string):
                 stack.pop()
                 ip += 1
             else:
-                # message = printError(stack, input_string, ip)
-                # print(message)
                 raise TerminalException(f"Stack: {stack[-1]}\nIP: {input_string[ip]}")
         elif stack[-1] in rules and input_string[ip] in rules[stack[-1]]:
             top = stack.pop()
@@ -103,6 +101,4 @@ def parse(input_string):
             # print rule 
             print(top + " -> " + str(rules[top][input_string[ip]]))
         else: 
-            # message = printError(stack, input_string, ip)
-            # print(message)
             raise RuleNotFoundException(f"Stack: {stack[-1]}\nIP: {input_string[ip]}")
