@@ -12,8 +12,7 @@
 
 ## Run
 - `python driver.py "input_string"` or `python3 driver.py "input_string"`
-- You must specify an input string as a command line argument(#Demo) below.
-
+- You must specify an input string as a command line argument [below](#Demo)
 # Understanding
 - This program implements the parse table in the [assignment-3-description](https://github.com/tpang29/CSCI-621-Assignment-3/blob/master/assignment-3-description.pdf) through an adjacency list of nested dictionaries. 
 - The outer key represents the row (nonterminal) from the parse table
