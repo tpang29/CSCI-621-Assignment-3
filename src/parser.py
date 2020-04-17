@@ -1,4 +1,5 @@
 from errors import *
+
 # define terminals
 ZERO = "0"
 ONE = "1"
